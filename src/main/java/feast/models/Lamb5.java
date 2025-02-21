@@ -5,10 +5,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Lamb5 {
-    private final Goat6 goat;
+    private Goat6 goat;
 
     @Autowired
-    public Lamb5(Goat6 goat) {
+    public void setGoat(Goat6 goat) {
         this.goat = goat;
     }
 

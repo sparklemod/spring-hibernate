@@ -5,12 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Horse7 {
-    private final Camel8 camel8;
-
     @Autowired
-    public Horse7(Camel8 camel8) {
-        this.camel8 = camel8;
-    }
+    private Camel8 camel8;
 
     @Override
     public String toString() {

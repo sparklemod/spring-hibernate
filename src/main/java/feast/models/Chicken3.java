@@ -5,17 +5,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Chicken3 {
-
-    private final Pig4 pig4;
+    private Pig4 pig;
 
     @Autowired
-    public Chicken3(Pig4 pig4) {
-        this.pig4 = pig4;
+    public void setPig(Pig4 pig) {
+        this.pig = pig;
     }
 
     @Override
     public String toString() {
-        return "which is stuffed inside a pig, " + pig4.toString();
+        return "which is stuffed inside a pig, " + pig.toString();
     }
 }
 
