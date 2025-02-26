@@ -1,14 +1,14 @@
 package feast.models;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
+@Primary
 public class Lamb5 {
-    private Goat6 goat;
+    private final Goat6 goat;
 
-    @Autowired
-    public void setGoat(Goat6 goat) {
+    public Lamb5(Goat6 goat) {
         this.goat = goat;
     }
 
